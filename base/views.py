@@ -29,7 +29,7 @@ class RegisterPage(FormView):
                 if user is not None:
                         login(self.request, user)
                 return super(RegisterPage, self).form_valid(form)
-        
+        # if redirect auth user doesnt work, activate this function
         # def get(self, *args, **kwargs):
         #         if self.request.user.is_authenticated:
         #                 return redirect('tasks')
